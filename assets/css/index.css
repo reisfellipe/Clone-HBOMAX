@@ -1,0 +1,13 @@
+@import url('global.css');
+
+header {
+    background-color: var(--nav-bg-color);
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px;
+}
