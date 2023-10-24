@@ -1,7 +1,7 @@
 @import url('global.css');
 
 body {
-    background-image: var(divider-bg-color);
+    background-color: var(--primary-color);
 }
 
 .menu {
@@ -11,6 +11,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
 }
 
 .menu .menu__logo {
@@ -31,10 +34,56 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: white;
+    font-size: 13px;
 }
 
 .menu .menu__lista .menu__item .menu__link--disabled {
     background-color: var(--tertiary-color);
     padding: 8px 20px;
     border-radius: 20px;
+    transition: all .9s;
+    margin-left: 6px;
+}
+.menu .menu__lista .menu__item .menu__link--disabled:hover {
+    color: var(--tertiary-color);
+    background-color: white;
+    transition-duration: 1s;
+}
+
+/* secção animada */
+.channels {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'quicksand', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    margin: 6rem 30%;
+
+    /* position: absolute;
+    left: 36vw;
+    top: 50vh; */
+}
+
+.channels .channels__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.channels .channels__list .channels__items {
+    margin: 15px;
+}
+
+.channels .channels__slogan {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.channels .divider {
+    margin: 2.3rem auto;
+    height: 5px;
+    width: 35rem;
+    background-image: var(--divider-bg-color);
 }
