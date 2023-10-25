@@ -128,21 +128,57 @@ body {
     border-radius: 29px;
     font-size: 16px;
     background-image: linear-gradient(45deg,  #9b34ef 0%,
-    #490cb0 20%, transparent 100%);
+    #5e13e0 20%, transparent 100%);
     margin-bottom: 35px;
     letter-spacing: 2px;
-    transition: all .7s;
+    animation: buttonMotion 3s ease-in-out infinite;
 
 }
 
 
 .channels .channels__signature .channels__btn-sign:hover {
-    border: 3px solid #ff00e5;
-    background-image: none;
+    cursor: pointer;
+    animation-play-state: paused;
+    animation-direction: alternate-reverse;
+    animation: border 1.3s ease;
 }
 
 @keyframes buttonMotion {
     0% {
-        
+        transform: rotate(0);
     }
+    15% {
+        transform: rotate(-13deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    40%, 100%{
+        transform: rotate(0);
+    }
+
+}
+
+@keyframes border {
+    from {
+        border: 3px solid #000000;
+        background-image: linear-gradient(45deg,  #9b34ef 0%,
+        #5e13e0 20%, transparent 100%);
+
+    }
+
+    to {
+        border: 3px solid #9b34ef;
+        background-image: var(--btn-bg-color-gradient);
+    }
+
 }
