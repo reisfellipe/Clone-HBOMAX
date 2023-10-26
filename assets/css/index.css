@@ -65,13 +65,6 @@ body {
     background-size: 400% 400%;
 }
 
-/* .channels::after {
-    content: "";
-    width: 100%;
-    background: linear-gradient(transparent, rgb(31,31,31));
-    position: absolute;
-} */
-
 .channels .channels__list {
     display: flex;
     justify-content: center;
@@ -126,6 +119,7 @@ body {
     width: 230px;
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
+    padding-bottom: 30px;
 }
 
 .channels .channels__signature .channels__btn-sign {
@@ -240,7 +234,7 @@ body {
     display: flex;
     flex-direction: row;
     color: #Fff;
-    width: 73%;
+    width: 75%;
 }
 
 .product .product__card {
@@ -259,7 +253,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 30px;
+    margin: 25px 30px;
 }
 
 .product .product__card .card__title h1 {
