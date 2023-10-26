@@ -65,6 +65,13 @@ body {
     background-size: 400% 400%;
 }
 
+/* .channels::after {
+    content: "";
+    width: 100%;
+    background: linear-gradient(transparent, rgb(31,31,31));
+    position: absolute;
+} */
+
 .channels .channels__list {
     display: flex;
     justify-content: center;
@@ -196,4 +203,45 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* produtos segunda section */
+/* .product::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(31,31,31));
+    position: absolute;
+} */
+
+.product {
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    text-align: center;
+    background-image: url('../images/background-movies-series.png');
+    background-size: cover;
+    font-family: 'Raleway',sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.product h1 {
+    padding: 1rem;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.product .product__cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.product .product__card {
+    background-image: var(--card-bg-color);
+    min-height: 600px;
+    padding: 40px;
 }
