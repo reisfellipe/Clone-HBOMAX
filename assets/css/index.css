@@ -85,7 +85,7 @@ body {
 .channels .divider {
     margin: 2.3rem auto;
     height: 5px;
-    width: 35rem;
+    width: 45rem;
     background-image: var(--divider-bg-color);
 }
 
@@ -141,7 +141,7 @@ body {
 .channels .channels__signature .channels__btn-sign:hover {
     cursor: pointer;
     animation-direction: alternate-reverse;
-    animation: border 1.3s ease;
+    animation: border .9s ease;
     animation-fill-mode: forwards;
 }
 
@@ -234,19 +234,26 @@ body {
     display: flex;
     flex-direction: row;
     color: #Fff;
-    width: 85%;
+    width: 70%;
 }
 
 .product .product__card {
     background-image: var(--card-bg-color);
     min-height: 600px;
-    padding: 40px;
+    padding: 40px 50px;
     margin: 40px;
     border-radius: 10px;
     text-align: start;
     font-family: 'Raleway',sans-serif;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.product .product__card .card__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product .product__card .card__title {
@@ -282,4 +289,49 @@ body {
     margin: 19px;
     max-width: 80%;
     text-align: left;
+}
+
+.product .product__card .card__button {
+    text-align: center;
+    font-family:'Raleway',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px 60px;
+    border-radius: 29px;
+    font-size: 15px;
+    background-image: linear-gradient(45deg,  #9b34ef 0%,
+    #5e13e0 20%, transparent 100%);
+    margin-top: 25px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1px;
+    transition: all .9s;
+    perspective: 200px;
+}
+
+.product .product__card .card__button:hover {
+    outline: 3px solid #ff00e5;
+    animation: border .9s;
+    animation-fill-mode: forwards;
+    font-size: 18px;
+}
+
+.product .product__card:hover {
+    animation: cardagainst 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cardagainst {
+    
+    0% {
+        -webkit-transform: translateX(0) rotateY(0);
+                transform: translateX(0) rotateY(0);
+      }
+      100% {
+        -webkit-transform: translateX(150px) rotateY(-50deg);
+                transform: translateX(150px) rotateY(-50deg);
+      }
+
+
 }
