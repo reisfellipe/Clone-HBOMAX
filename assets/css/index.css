@@ -224,6 +224,7 @@ body {
     font-family: 'Raleway',sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .product h1 {
@@ -238,10 +239,53 @@ body {
 .product .product__cards {
     display: flex;
     flex-direction: row;
+    color: #Fff;
+    width: 73%;
 }
 
 .product .product__card {
     background-image: var(--card-bg-color);
     min-height: 600px;
     padding: 40px;
+    margin: 40px;
+    border-radius: 10px;
+    text-align: start;
+    font-family: 'Raleway',sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .product__card .card__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.product .product__card .card__title h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.product .product__card .card__title span{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.product .product__card .card__list {
+    list-style: none;
+}
+
+.product .product__card .card__list .card__list-item::before {
+    content: "✙   ";
+    margin-right: .7rem;
+}
+
+.product .product__card .card__list .card__list-item {
+    font-size: 20px;
+    margin: 19px;
+    max-width: 80%;
+    text-align: left;
 }
