@@ -351,7 +351,7 @@ body {
 .series h2 {
     color: white;
     text-align: center;
-    margin: 10rem auto 30px ;
+    margin: 10rem auto 3rem ;
     font-family: 'Raleway',sans-serif;
     font-weight: 500;
     font-size: 32px;
@@ -372,12 +372,12 @@ body {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
-    gap: 30px;
+    gap: 40px;
 }
 .series .series__gallery .series__gallery-2 {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
 }
 
 .series .series__gallery .series__thumbs .series__image {
