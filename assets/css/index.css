@@ -2,6 +2,8 @@
 
 body {
     background-color: var(--primary-color);
+    margin: 0;
+    height: 100vh;
 }
 
 .menu {
@@ -336,7 +338,9 @@ body {
 /* seção cards series */
 
 .series {
-    height: 100vh;
+    height: 950px;
+    max-width: 1200px;
+    margin: auto auto 370px auto;
 }
 
 .series h2 {
@@ -431,13 +435,11 @@ body {
 } 
 
 footer{
-    margin: 340px auto auto; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    height: 300px;
+    padding: 50px auto auto;
     color: #9e86ff;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -447,6 +449,7 @@ footer p {
     font-weight: 100;
     font-size: 12px;
     margin: 15px auto;
+    text-align: center;
 }
 
 footer .footer__list {
@@ -465,14 +468,16 @@ footer .footer__list .footer__item {
 footer .footer__list .footer__item:hover {
     color: #9b34ef;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 footer .social__list {
     display: flex;
     flex-direction: row;
-    margin: 70px auto 10px;
+    margin: 70px auto 20px;
     align-items: center;
     justify-items: center;
+    justify-content: center;
     
     transition: all  1s;
 }
@@ -485,6 +490,8 @@ footer .social__list .social__item{
 
 footer .social__list .social__item img:hover {
     color: #9b34ef;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media (min-width: 1080px) {
