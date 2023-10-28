@@ -549,16 +549,26 @@ footer .social__list .social__item img:hover {
         width: 50%;
     }
 
+    #product {
+        height: 100%;
+    }
+
     .product .h1 {
         max-width: 100%;
-        padding: .5rem;
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .product .product__card {
+        margin: 25px;
+        padding: 50px 10px;
     }
 
     .product .product__cards {
         display: flex;
         flex-direction: column;
         color: #Fff;
-        max-width: 400px;
+        max-width: 450px;
     }
 
     .product .product__card .card__title {
@@ -569,5 +579,12 @@ footer .social__list .social__item img:hover {
         text-align: center;
     }
 
+    .product:has(.product__card:nth-child(1):hover) .product__card:nth-child(2) {
+        transform: rotateY(0deg);
+    }
+    
+    .product:has(.product__card:nth-child(2):hover) .product__card:nth-child(1){
+        transform: rotateY(0deg);
+    }
 
   }
