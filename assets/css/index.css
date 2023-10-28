@@ -59,7 +59,8 @@ body {
 
 /* secção animada */
 .channels {
-    height: 100vh;
+    height: 110vh;
+    
     display: flex;
     flex-direction: column;
     font-family: 'quicksand', sans-serif;
@@ -492,17 +493,6 @@ footer .social__list .social__item img:hover {
     color: #9b34ef;
     transform: scale(1.1);
     cursor: pointer;
-}
-
-@media (min-width: 1080px) {
-    
-    .product .product__cards {
-        display: flex;
-        flex-direction: row;
-        color: #Fff;
-        width: 70%;
-    }
-
 }
 
 /* Custom Scroll */
