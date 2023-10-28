@@ -579,12 +579,32 @@ footer .social__list .social__item img:hover {
         text-align: center;
     }
 
+    .product .product__card .card__list .card__list-item {
+        font-size: 17px;
+        margin: 19px;
+        max-width: 80%;
+        text-align: left;
+    }
+
+
+
     .product:has(.product__card:nth-child(1):hover) .product__card:nth-child(2) {
         transform: rotateY(0deg);
     }
     
     .product:has(.product__card:nth-child(2):hover) .product__card:nth-child(1){
         transform: rotateY(0deg);
+    }
+
+    .series .series__gallery .series__gallery-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .series .series__gallery .series__gallery-2 {
+        display: flex;
+        flex-direction: column;
     }
 
   }
