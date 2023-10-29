@@ -730,4 +730,8 @@ footer .social__list .social__item img:hover {
         width: 85%;
     }
 
+    main footer .social__list .social__item img {
+        box-shadow: none;
+    }
+
   }
