@@ -671,6 +671,41 @@ footer .social__list .social__item img:hover {
         background-image: url('../images/UCL-Hover.webp');
         transform: scale(1.08);
     } 
+
+    /* CORRIGIR SCROLL LATERAL !!!! */
     
+
+    .gallery__wrapperl {
+        height: 460px;
+        width: 90%;
+        background:#EFEFEF; 
+        box-shadow: 1px 1px 10px #999; 
+        margin: auto; 
+        text-align: center; 
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding-top: 5px;
+    }
+
+    .series .series__gallery .gallery__scroll { 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 460px;
+        white-space:nowrap;
+    }
+
+    
+    img { 
+        box-shadow: 1px 1px 10px #999; 
+        margin: 2px;
+        max-height: 150px;
+        cursor: pointer;
+        display:inline-block;
+        *display:inline;
+        *zoom:1;
+        vertical-align:top;
+    }
 
   }
