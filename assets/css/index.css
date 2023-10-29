@@ -703,7 +703,6 @@ footer .social__list .social__item img:hover {
 
     
     img { 
-        box-shadow: 1px 1px 10px #999; 
         margin: 2px;
         max-height: 150px;
         cursor: pointer;
