@@ -521,12 +521,12 @@ footer .social__list .social__item img:hover {
 
     .menu {
         display: flex;
-        padding: 60px 30px;
+        padding: 60px 10px;
         flex-direction: column;
         justify-content: space-evenly;
         gap: 25px;
         align-items: center;
-        width: auto;
+        width: 100vw;
     }
 
     .menu .menu__logo {
@@ -554,9 +554,9 @@ footer .social__list .social__item img:hover {
     }
 
     .product .h1 {
-        max-width: 100%;
         padding: 0;
         font-size: 2rem;
+        max-width: 86% ;
     }
 
     .product .product__card {
@@ -586,6 +586,9 @@ footer .social__list .social__item img:hover {
         text-align: left;
     }
 
+    .product .product__card .card__button {
+        border-radius: 35px;
+    }
 
 
     .product:has(.product__card:nth-child(1):hover) .product__card:nth-child(2) {
@@ -594,6 +597,14 @@ footer .social__list .social__item img:hover {
     
     .product:has(.product__card:nth-child(2):hover) .product__card:nth-child(1){
         transform: rotateY(0deg);
+    }
+
+    .series .series__gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     .series .series__gallery .series__gallery-1 {
@@ -606,5 +617,60 @@ footer .social__list .social__item img:hover {
         display: flex;
         flex-direction: column;
     }
+
+    .series .series__gallery .series__thumbs .series__image {
+        width: 90%;
+        max-height: 460px;
+        object-fit: cover;
+        object-position: center;
+        transition: all 2s;
+    
+        border-radius: 15px;
+    
+    }
+
+    .series .series__gallery .series__thumbs:hover {
+        opacity: 1;
+        object-fit: cover;
+        object-position: center;
+        background-size: cover;
+        height: 460px; 
+        transition: all 1s;
+        border-radius: 15px;
+        outline: 2px solid #ff00e5;
+    }
+    
+    .series .series__gallery .series__gallery-1 .series__thumbs:nth-child(1):hover {
+        background-image: url('../images/hbo-hover_0.webp');  
+        transform: scale(1.08);  
+    }
+    
+    .series .series__gallery .series__gallery-1 .series__thumbs:nth-child(2):hover {
+        background-image: url('../images/MAX-Hover.webp');
+        transform: scale(1.08);
+    } 
+    
+    
+    .series .series__gallery .series__gallery-1 .series__thumbs:nth-child(3):hover {
+        background-image: url('../images/DC-Hover.webp');
+        transform: scale(1.08);
+    } 
+    
+    .series .series__gallery .series__gallery-2 .series__thumbs:nth-child(1):hover {
+        background-image: url('../images/WB-Hover.webp');
+        transform: scale(1.08);
+    } 
+    
+    .series .series__gallery .series__gallery-2 .series__thumbs:nth-child(2):hover {
+        background-image: url('../images/CN-Hover.png');
+        transform: scale(1.08);
+        
+    } 
+    
+    .series .series__gallery .series__gallery-2 .series__thumbs:nth-child(3):hover {
+        background-image: url('../images/UCL-Hover.webp');
+        transform: scale(1.08);
+    } 
+    
 
   }
