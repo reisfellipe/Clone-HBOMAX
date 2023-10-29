@@ -599,6 +599,11 @@ footer .social__list .social__item img:hover {
         transform: rotateY(0deg);
     }
 
+    .series {
+        height: 630px;
+        margin: auto;
+    }
+
     .series .series__gallery {
         display: flex;
         flex-direction: column;
@@ -706,6 +711,24 @@ footer .social__list .social__item img:hover {
         *display:inline;
         *zoom:1;
         vertical-align:top;
+    }
+
+
+    /* RODAPÉ */
+
+    main footer .footer__list {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+
+    main footer .footer__list .footer__item {
+        margin: 10px auto;
+    }
+
+    main footer .footer__responsive p {
+        width: 85%;
     }
 
   }
