@@ -647,9 +647,8 @@ footer .social__list .social__item img:hover {
     
     .series .series__gallery .series__gallery-1 .series__thumbs:nth-child(1):hover {
         background-image: url('../images/hbo-hover_0.webp');  
-        
-        height: auto;
         width: 90%;
+        height: auto;
         transform: none;
     }
     
@@ -715,13 +714,13 @@ footer .social__list .social__item img:hover {
     
 
     .series .series__gallery .series__gallery-1 .series__thumbs .series__image {
-        width: 90%;
+        width: 85%;
         object-fit: cover;
         object-position: center;
     }
         
     .series .series__gallery .series__gallery-2 .series__thumbs .series__image {
-    width: 90%;
+    width: 85%;
     object-fit: cover;
     object-position: center;
     }
