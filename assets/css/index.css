@@ -752,3 +752,33 @@ footer .social__list .social__item img:hover {
     }
 
   }
+
+  @media (min-width: 769px) and (max-width: 1080px) {
+    .series .series__gallery{
+        margin: auto;
+    }
+
+    .series .series__gallery .series__gallery-1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 30px;
+    }
+
+    .series .series__gallery .series__gallery-2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: auto 30px;
+    }
+
+
+    main footer {
+        margin-top: 100rem;
+    }
+  }
+
+  @media (min-width: 1081px) {
+    .series .series__gallery {
+        margin: auto 20px;
+    }
+  }
